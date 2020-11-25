@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<CENTER>
+    <h1>
+
+        <head>DATOS GENERALES
+            <link rel="stylesheet" href="estilo.css" type="text/css">
+            <title>INSTITUTO MARIA TERESA CANCINO</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        </head>
+    </h1>
+</CENTER>
+<HR>
+<style type="text/css">
+    body {
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    
+    .form {
+        /* Sólo para centrar el formulario a la página */
+        position: relative;
+        width: 1000px;
+        height: 900;
+        /* Para ver el borde del formulario */
+        padding-left: 20xp;
+        padding-top: 15px;
+        border-radius: 20px;
+        margin: auto;
+    }
+    
+    input [type=text] {
+        /* Posiciona los botones a la misma posición que los campos de texto */
+        /* Mismo tamaño a todos los elementos label */
+        text-transform: uppercase;
+        width: 350px;
+        height: 35px;
+        text-align: center;
+    }
+    
+    input [type=submit] {
+        /* Este margen extra representa aproximadamente el mismo espacio que el espacio entre los labels y sus campos de texto */
+        position: relative;
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 150px;
+        border: 0;
+    }
+    
+    input {
+        margin: 5px 5px 0px 5px;
+        font-size: 14px;
+        color: rgb(27, 26, 10);
+        text-transform: uppercase;
+        text-shadow: 0.5px 1px 0px #fff;
+    }
+    
+    label {
+        margin: 5px 5px 0px 5px;
+        font-size: 14px;
+        color: rgb(27, 26, 10);
+        text-transform: uppercase;
+        text-shadow: 0.5px 1px 0px #fff;
+    }
+    
+    button {
+        /* Este margen extra representa aproximadamente el mismo espacio que el espacio entre los labels y sus campos de texto */
+        position: relative;
+        width: 150px;
+        height: 60px;
+        border-radius: 20px;
+        margin-left: 150px;
+        border: 0;
+        background-color: #e6e0de;
+        font-size: 18px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="form">
+        <form id="formulario" action="registro.php" target="_blank " method="post">
+
+            <hr>
+            <b><label >ALUMNO</label></b>
+            <br>
+            <hr>
+            <label for="N_alumno">NOMBRE(S)</label>
+            <input type="text" name="N_alumno" id="NOMBRE" size="20" value="" required>
+            <label for="APaterno">APELLIDO PATERNO</label>
+            <input type="text" name="APaterno" id="APATERNO" size="20" value="" required>
+            <label for="AMaterno">APELLIDO MATERNO</label>
+            <input type="text" name="AMaterno" id="AMATERNO" size="20" value="" required>
+            <br><br>
+            <label for="Seccion">SECCION
+                <select id ="select_SECCION" name="Seccion">
+                  <option value="1">KINDER</option>
+                  <option value="2">PRIMARIA</option>
+                  <option value="3">SECUNDARIA</option>
+            </select> </label>
+            <label for="Grado">GRADO A CURSAR</label>
+            <input type="text" name="Grado" id="GRADO" size="3" value="" required>
+            <label for="ciclo"> CICLO ESCOLAR </label>
+            <input type="text" name="ciclo " id="ciclo" size="6" name="user_ciclo" value="" required>
+            <label for="LNacimiento">LUGAR DE NACIMIENTO</label>
+            <input type="text" name="LNacimiento" id="LNACIMIENTO" value="" required>
+            <br><br><label for="FNacimiento">FECHA DE NACIMIENTO</label>
+            <input type="date" name="FNacimiento" id="FNACIMIENTO" size="10" value="" required>
+            <label for="Nacionalidad">NACIONALIDAD</label>
+            <input type="text" name="Nacionalidad" id="NACIONALIDAD" size="15" value="" required>
+            <br><br><label for="Colegio">COLEGIO O ESCUELA ANTERIOR</label>
+            <input type="text" name="Colegio" id="COLEGIO" size=" 25" value="" required>
+            <hr>
+            <b><label >PADRES O TUTORES</label></b>
+            <br>
+            <hr>
+            <br><label for="Papa"> NOMBRE DEL PADRE O TUTOR</label>
+            <input type="text" name="Papa" id="PAPÃ" size="40" value="" value="" required>
+            <label for="Profesion">  PROFESION</label>
+            <input type="text" name="Profesion" id="PROFESION" size="18" value="" required>
+            <br><label for="Cel">CEL</label>
+            <input type="text" name="Cel" id="TEL" size="12" value="" required>
+            <label for="Correo">CORREO DEL PAPÁ</label>
+            <input type="email" name="Correo" id="CORREO" size="40" required>
+            <hr><br><label for="Mama">NOMBRE DE LA MADRE</label>
+            <input type="text" name="Mama" id="MAMÃ" size="45" value="" required>
+            <label for="Profesion1">PROFESION</label>
+            <input type="text" name="Profesion1" id="PROFESION1" size="20" value="" required>
+            <br><label for="Cel1">CEL</label>
+            <input type="text" name="TEL1" id="TEL1" size="12" value="" required>
+            <label for="Correo1">CORREO DEL MAMÁ</label>
+            <input type="email" name="Correo1" id="CORREO1" size="40" required>
+            <hr>
+            <b><label>INFORMACION GENERAL</label></b>
+            <br>
+            <hr>
+            <br><label for="Direccion">DOMICILIO PARTICULAR</label>
+            <input type="text" name="Direccion" id="DIRECCION" size="20" required>
+            <label for="Colonia">COLONIA</label>
+            <input type="text" name="Colonia" id="COLONIA" size="20" required>
+            <label for="Localidad">LOCALIDAD</label>
+            <input type="text" name="Localidad" id="LOCALIDAD" size="14" required>
+            <br><br><label for="Estado"> ESTADO</label>
+            <input type="text" name="Estado" id="ESTADO" size="10" required>
+            <label for="C_Postal">CP.</label>
+            <input type="text" name="C_Postal" id="CODIGO POSTAL" size="6" required>
+            <hr><br><label for="Tel_Casa">TEL. CASA</label>
+            <input type="text" name="Tel_Casa" id="Tel_Casa" size="10" required>
+            <br><br><label for="FInscripcion">FECHA</label>
+            <input type="date" name="FInscripcion" id="FINSCRIPCIÓN" size="10" required>
+            <br><br>
+            <hr>
+
+            <button onclick="location.href='imtec'">Enviar</button>
+            <button type="reset">Borrar </button>
+            <button onclick="location.href='index.html'"> Inicio </button>
+        </form>
+    </div>
+
+</body>
+
+</html>

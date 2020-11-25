@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTITUTO MARIA TERESA CANCINO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="principal">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.jpg" alt="" height="150px">
+                </a>
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <h1>Instituto María Teresa Cancino </h1>
+        </div>
+        <!--contenedor-->
+    </header>
+    <div class="form">
+        <form id="formulario" action="registro.php" method="post">
+
+            <hr>
+            <b><label >ALUMNO</label></b>
+            <br>
+            <hr>
+            <label for="NOMBRE">NOMBRE(S)</label>
+            <input type="text" name="NOMBRE" id="NOMBRE" size="25" value="" required>
+            <label for="APATERNO">APELLIDO PATERNO</label>
+            <input type="text" name="APATERNO" id="APATERNO" size="25" value="" required>
+            <label for="AMATERNO">APELLIDO MATERNO</label>
+            <input type="text" name="AMATERNO" id="AMATERNO" size="26" value="" required>
+            <br><br>
+            <label for="SECCION">SECCION
+                <select id ="select_SECCION" name="SECCION">
+                  <option value="1">KINDER</option>
+                  <option value="2">PRIMARIA</option>
+                  <option value="3">SECUNDARIA</option>
+            </select> </label>
+            <label for="GRADO">GRADO A CURSAR</label>
+            <input type="text" name="GRADO" id="GRADO" size="3" value="" required>
+            <label for="ciclo"> CICLO ESCOLAR </label>
+            <input type="text" name="ciclo " id="ciclo" size="13" name="user_ciclo" value="" required>
+            <label for="LNACIMIENTO">LUGAR DE NACIMIENTO</label>
+            <input type="text" name="LNACIMIENTO" id="LNACIMIENTO" value="" required>
+            <br><br><label for="FNACIMIENTO">FECHA DE NACIMIENTO</label>
+            <input type="date" name="FNACIMIENTO" id="FNACIMIENTO" size="10" value="" required>
+            <label for="NACIONALIDAD">NACIONALIDAD</label>
+            <input type="text" name="NACIONALIDAD" id="NACIONALIDAD" size="15" value="" required>
+            <br><br><label for="COLEGIO">COLEGIO O ESCUELA ANTERIOR</label>
+            <input type="text" name="COLEGIO" id="COLEGIO" size=" 25" value="" required>
+            <hr>
+            <b><label >PADRES O TUTORES</label></b>
+            <br>
+            <hr>
+            <br><label for="PAPÃ"> NOMBRE DEL PADRE O TUTOR</label>
+            <input type="text" name="PAPÁ" id="PAPÃ" size="40" value="" value="" required>
+            <label for="PROFESION">  PROFESION</label>
+            <input type="tel" name="PROFESION" id="PROFESION" size="18" value="" required>
+            <label for="TEL">TEL. TRABAJO</label>
+            <input type="text" name="TEL" id="TEL" size="12" value="" required>
+            <hr><br><label for="MAMÃ">NOMBRE DE LA MADRE</label>
+            <input type="text" name="MAMÃ" id="MAMÃ" size="45" value="" required>
+            <label for="PROFESION1">     PROFESION</label>
+            <input type="tel" name=" PROFESION1" id="PROFESION1" size="20" value="" required>
+            <label for="TEL1">TEL. TRABAJO</label>
+            <input type="text" name="TEL1" id="TEL1" size="13" value="" required>
+            <hr>
+            <b><label>INFORMACION GENERAL</label></b>
+            <br>
+            <hr>
+            <br><label for="DIRECCION">DOMICILIO PARTICULAR</label>
+            <input type="text" name="DIRECCION" id="DIRECCION" size="40" required>
+            <label for="COLONIA">COLONIA</label>
+            <input type="text" name="COLONIA" id="COLONIA" size="30" required>
+            <label for="LOCALIDAD">LOCALIDAD</label>
+            <input type="text" name="LOCALIDAD" id="LOCALIDAD" size="14" required>
+            <br><br><label for="ESTADO"> ESTADO</label>
+            <input type="text" name="ESTADO" id="ESTADO" size="10" required>
+            <label for="CODIGOPOSTAL">CP.</label>
+            <input type="text" name="CODIGOPOSTAL" id="CODIGO POSTAL" size="6" required>
+            <hr><br><label for="TELCASA">TEL. CASA</label>
+            <input type="tel" name="TELCASA" id="TELCASA" size="12" required>
+            <label for="TELPAPÃ">CEL. PAPÃ</label>
+            <input type="text" name="TELPAPÃ" id="TELPAPÃ" size="12" required>
+            <label for="TELMAMÃ">CEL. MAMÃ</label>
+            <input type="text" name="TELMAMÃ" id="TELMAMÃ" size="12" required>
+            <br><br>
+            <label for="CORREO">CORREO DEL PAPÁ</label>
+            <input type="email" name="CORREO" id="CORREO" size="50" required>
+            <label for="CORREO1">CORREO DEL MAMÁ</label>
+            <input type="email" name="CORREO1" id="CORREO1" size="50" required>
+            <br><br><label for="FINSCRIPCIÓN">FECHA</label>
+            <input type="date" name="FINSCRIPCIÓN" id="FINSCRIPCIÓN" size="10" required>
+            <br><br>
+            <hr>
+
+            <button onclick="location.href='historia.html'"> Siguiente </button>
+            <button type="reset">Borrar </button>
+            <button onclick="location.href='principal.html'"> Inicio </button>
+        </form>
+    </div>
+
+</body>
+
+</html>

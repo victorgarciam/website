@@ -1,0 +1,252 @@
+/*html*/
+
+html {
+    font-size: 62.5%;
+    /**reset para rems - 62.5%=10px de 16px**/
+}
+
+
+/*body*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+
+main {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+/*globales*/
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+
+/**utilidades**/
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/*header*/
+
+.site-header.inicio {
+/*    background: url(../img/ENCABEZADO-01.png);*/
+    background-position: top;
+    background-size: cover;
+    height: 60vh;
+    min-height: 10rem;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /**nos permite alinear uno arriba y otro abajo**/
+}
+
+.contenido-header h1 {
+    color: black;
+    padding-bottom: 2rem;
+    /**pading es separacion hacia adentro del elemento**/
+    max-width: 60rem;
+    line-height: 2rem;
+    /**line es el interlineado**/
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    /**justify alinea contenido horizontalmente**/
+    align-items: center;
+    padding-top: 3rem;
+}
+
+
+/**formularios **/
+
+form {
+    font-weight: 300;
+    text-align: center;
+}
+
+.formulario-contacto {
+    padding: 50px 40px;
+    display: block;
+    width: 30%;
+    margin: auto;
+    color: #3d0b26;
+}
+
+.formulario-registro {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.regis {
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+}
+
+
+/**atributos del formulario**/
+
+legend {
+    font-size: 2rem;
+    color: rgba(14, 14, 180, 0.445);
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 95%;
+    background-color: rgb(240, 245, 245);
+    margin-bottom: 0rem;
+    border: none;
+    border-radius: 0rem;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    height: 10rem;
+}
+
+
+/**botones**/
+
+.botones {
+    color: white;
+    height: 5rem;
+    border-radius: 5rem;
+}
+
+.boton:hover {
+    cursor: help;
+}
+
+.boton-enviar {
+    background-color: rgb(168, 179, 149);
+}
+
+
+/*navegacion*/
+
+.navegacion a {
+    color: rgb(32, 107, 245, .6);
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    /**margin es separacion del elemento hacia otro elemento **/
+}
+
+.navegacion a:hover {
+    color: rgb(206, 64, 12);
+}
+
+.navegacion a:last-of-type {
+    margin: 0;
+}
+
+
+/**icocnos nosotros damos formato a la seccion**/
+
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono {
+    flex-basis: calc(33.3% - 1rem);
+    text-align: justify;
+}
+
+.icono h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/**footer parte de abajo y Testimoniales**/
+
+.especiales {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.especiales-block {
+    flex-basis: cal(33.3% - 1rem);
+    text-align: center;
+    border: .5rem double rgb(173, 170, 170);
+    background-color: rgb(233, 232, 186);
+}
+
+.site footer {
+    background-color: black;
+    margin: 0rem;
+}
+
+.contenedor-footer {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyringht {
+    margin: 0rem;
+}
